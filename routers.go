@@ -25,7 +25,7 @@ func SetupRouter() *http.ServeMux {
 	})
 
 	mux.HandleFunc("/beda", func(w http.ResponseWriter, r *http.Request) {
-		w.WriteHeader(http.StatusBad)
+		w.WriteHeader(http.StatusOK)
 		fmt.Fprintln(w, "Santiago es mi novio")
 		
 	})
