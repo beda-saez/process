@@ -1,5 +1,4 @@
 package main
-
 import (
 	"fmt"
 	"net/http"
@@ -26,7 +25,8 @@ func SetupRouter() *http.ServeMux {
 
 	mux.HandleFunc("/beda", func(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusOK)
-		fmt.Fprintln(w, "Beda Lisa Saez Flores")
+		fmt.Fprintln(w, "Santiago es mi novio")
+		
 	})
 
 	return mux
