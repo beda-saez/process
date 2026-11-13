@@ -26,7 +26,7 @@ func SetupRouter() *http.ServeMux {
 
 	mux.HandleFunc("/beda", func(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusBad)
-		fmt.Fprintln(w, "Tengo 24 anos de edad y soy Beda")
+		fmt.Fprintln(w, "Santiago es mi novio")
 		
 	})
 
