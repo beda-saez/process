@@ -6,14 +6,10 @@ import (
 	"time"
 )
 
-name := "Beda"
-age := 24
 
 func main(){
 	fmt.Println("Hello World!")
-	result := Hello(name, age)
-	time.Sleep(1000*time.Milisecond)
-	fmt.Println(result)
+	fmt.Println(Hello("Beda", 24))
 
 	mux := SetupRouter()
 	fmt.Println("Servidor corriendo en el puerto 8080...")
