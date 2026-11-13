@@ -24,5 +24,10 @@ func SetupRouter() *http.ServeMux {
 		fmt.Fprintln(w, "Esta es una ruta de prueba para validar flujos de CI/CD.")
 	})
 
+	mux.HandleFunc("/beda", func(w http.ResponseWriter, r *http.Request) {
+		w.WriteHeader(http.StatusBad)
+		fmt.Fprintln(w, "Esta soy yo")
+	})
+
 	return mux
 }
